@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="clockFaceView.js"></script>
+    <script src="clockArrowsView.js"></script>
+    <script src="clockView.js"></script>
+    <script src="clock.js"></script>
+</head>
+<body>
+<div id="analogClock"></div>
+<div class="button-container">
+
+   <!--  <input type="button" onclick="clockStart()" value="Start">
+    <input type="button" onclick="clockStop()" value="Stop"> -->
+</div>
+<div id="time" class="timeclock" hidden="true" align="center" >
+  <nobr>Время отчислений</nobr>
+</div>
+<script>
+  'use strict';
+  const clock = new Clock(document.getElementById('analogClock'));
+  function clockStart() {
+    clock.start();
+  }
+  function clockStop() {
+    clock.stop();
+  }
+</script>
+</body>
+</html>
